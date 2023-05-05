@@ -5,7 +5,7 @@ path = "src/main.rs"
 [package]
 name = "miu"
 version = "0.1.0"
-description = "Install Python, Rust, and other appliations with the tool"
+description = "Install Python, Rust, and other applications with one tool"
 edition = "2021"
 categories = ["command-line-utilities"]
 keywords = ["installer", "pip", "cargo"]
