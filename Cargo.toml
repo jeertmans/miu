@@ -1,0 +1,25 @@
+[[bin]]
+name = "miu"
+path = "src/main.rs"
+
+[package]
+name = "miu"
+version = "0.1.0"
+description = "Install Python, Rust, and other appliations with the tool"
+edition = "2021"
+categories = ["command-line-utilities"]
+keywords = ["installer", "pip", "cargo"]
+repository = "https://github.com/jeertmans/miu"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "miu"
+path = "src/lib/lib.rs"
+
+[package.metadata.docs.rs]
+features = ["unstable-doc"]
+rustdoc-args = ["--cfg", "docsrs"]
+cargo-args = ["-Zunstable-options", "-Zrustdoc-scrape-examples"]
+
+[dependencies]
+cargo = "0.70.1"
